@@ -9,7 +9,7 @@
   <body>
     <!-- Portada -->
     <header>
-      <h1>Lili Studio</h1>
+      <h1>Pao Lashes</h1>
       <p>Tu estilo, nuestra pasión ✂️</p>
       <a href="#servicios">Ver servicios</a>
     </header>
@@ -17,18 +17,20 @@
     <!-- Servicios -->
     <section id="servicios">
       <h2>Servicios</h2>
-      <div class="services">
-        <div class="service-card">
-          <h3>Corte de Cabello</h3>
-          <p>Duración: 30 min – Precio: $10</p>
+      <div  class="services">
+        <div id="servicio-lifting" class="service-card">
+          <h3>Lifting de pestañas</h3>
+          <p>Duración: 30 min – Precio: 800 CUP</p>
+          <div class="contenedor-imagen-servicio"><img class="imagen-servicio" src="img/lifting.jpg" alt="Lifting de pestañas"></div>
         </div>
-        <div class="service-card">
-          <h3>Tinte</h3>
-          <p>Duración: 1h – Precio: $20</p>
+        <div id="servicio-pestañas" class="service-card">
+          <h3>Pestañas de puntos</h3>
+          <p>Duración: 1h – Precio: 1000 CUP</p>
+          <div class="contenedor-imagen-servicio"><img class="imagen-servicio" src="img/pestanaPunto.jpg" alt="Pestañas de puntos"></div>
         </div>
-        <div class="service-card">
-          <h3>Tratamiento Capilar</h3>
-          <p>Duración: 45 min – Precio: $15</p>
+        <div id="servicio-laminado" class="service-card">
+          <h3>Laminado de cejas</h3>
+          <p>Duración: 45 min – Precio: 500 CUP</p>
         </div>
       </div>
       <a href="#agenda" class="btn">Reservar turno</a>
@@ -48,9 +50,9 @@
         <label for="servicio">Servicio:</label>
         <select id="servicio" name="servicio" required>
           <option value="">Selecciona un servicio</option>
-          <option value="corte">Corte de Cabello</option>
-          <option value="tinte">Tinte</option>
-          <option value="tratamiento">Tratamiento Capilar</option>
+          <option value="lifting">Lifting de pestañas</option>
+          <option value="pestañas">Pestañas de puntos</option>
+          <option value="laminado">Laminado de cejas</option>
         </select>
 
         <label for="fecha">Fecha:</label>
@@ -67,10 +69,20 @@
       <h2>Galería</h2>
       <div class="slider">
         <div class="slides">
-          <img src="img/corte1.jpeg" alt="Corte moderno" />
-          <img src="img/corte2.webp" alt="Peinado elegante" />
-          <img src="img/corte3.webp" alt="Antes y después" />
-          <img src="img/corte4.webp" alt="Barbero en acción" />
+          <img src="img/ceja (1).jpg" alt="Corte moderno" />
+          <img src="img/ceja (2).jpg" alt="Peinado elegante" />
+          <img src="img/ceja (3).jpg" alt="Antes y después" />
+          <img src="img/ceja (4).jpg" alt="Barbero en acción" />
+          <img src="img/ceja (5).jpg" alt="Barbero en acción" />
+          <img src="img/ceja (6).jpg" alt="Barbero en acción" />
+          <img src="img/ceja (7).jpg" alt="Barbero en acción" />
+          <img src="img/ceja (8).jpg" alt="Barbero en acción" />
+          <img src="img/ceja (9).jpg" alt="Barbero en acción" />
+          <img src="img/ceja (10).jpg" alt="Barbero en acción" />
+          <img src="img/ceja (11).jpg" alt="Barbero en acción" />
+          <img src="img/ceja (12).jpg" alt="Barbero en acción" />
+          <img src="img/ceja (13).jpg" alt="Barbero en acción" />
+          <img src="img/ceja (14).jpg" alt="Barbero en acción" />
         </div>
         <!-- Botones de navegación -->
         <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
@@ -79,10 +91,20 @@
 
       <!-- Miniaturas -->
       <div class="thumbnails">
-        <img src="img/corte1.jpeg" alt="Miniatura 1" onclick="goToSlide(0)" />
-        <img src="img/corte2.webp" alt="Miniatura 2" onclick="goToSlide(1)" />
-        <img src="img/corte3.webp" alt="Miniatura 3" onclick="goToSlide(2)" />
-        <img src="img/corte4.webp" alt="Miniatura 4" onclick="goToSlide(3)" />
+        <img src="img/ceja (1).jpg" alt="Miniatura 1" onclick="goToSlide(0)" />
+        <img src="img/ceja (2).jpg" alt="Miniatura 2" onclick="goToSlide(1)" />
+        <img src="img/ceja (3).jpg" alt="Miniatura 3" onclick="goToSlide(2)" />
+        <img src="img/ceja (4).jpg" alt="Miniatura 4" onclick="goToSlide(3)" />
+        <img src="img/ceja (5).jpg" alt="Miniatura 4" onclick="goToSlide(3)" />
+        <img src="img/ceja (6).jpg" alt="Miniatura 4" onclick="goToSlide(3)" />
+        <img src="img/ceja (7).jpg" alt="Miniatura 4" onclick="goToSlide(3)" />
+        <img src="img/ceja (8).jpg" alt="Miniatura 4" onclick="goToSlide(3)" />
+        <img src="img/ceja (9).jpg" alt="Miniatura 4" onclick="goToSlide(3)" />
+        <img src="img/ceja (10).jpg" alt="Miniatura 4" onclick="goToSlide(3)" />
+        <img src="img/ceja (11).jpg" alt="Miniatura 4" onclick="goToSlide(3)" />
+        <img src="img/ceja (12).jpg" alt="Miniatura 4" onclick="goToSlide(3)" />
+        <img src="img/ceja (13).jpg" alt="Miniatura 4" onclick="goToSlide(3)" />
+        <img src="img/ceja (14).jpg" alt="Miniatura 4" onclick="goToSlide(3)" />
       </div>
     </section>
 
@@ -96,14 +118,14 @@
       <h2>Nuestro Equipo</h2>
       <div class="team">
         <div class="member">
-          <img src="img/barbero1.webp" alt="Barbero Juan" />
-          <h3>Irlando Torres</h3>
-          <p>Especialista en cortes modernos</p>
+          <img src="img/barbero1.jpg" alt="Barbero Juan" />
+          <h3>Ada Martínez</h3>
+          <p>Especialista en liftings</p>
         </div>
         <div class="member">
-          <img src="img/barbero2.webp" alt="Estilista María" />
+          <img src="img/barbero2.jpg" alt="Estilista María" />
           <h3>Carla Pahola</h3>
-          <p>Experta en tintes y peinados</p>
+          <p>Arregladora de Cejas</p>
         </div>
       </div>
     </section>
@@ -123,9 +145,9 @@
     <section id="contacto">
       <h2>Contacto</h2>
       <p>Dirección: Calle 123, Centro Habana</p>
-      <p>Teléfono: +53 55555555</p>
-      <p>Email: contacto@elcortefino.com</p>
-      <a href="https://wa.me/5355555555" target="_blank">WhatsApp</a>
+      <p>Teléfono: +53 58251594</p>
+      <p>Email: paolaaa620@gmail.com</p>
+      <a href="https://wa.me/5358251594" target="_blank">WhatsApp</a>
       <div id="mapa">
         <!-- Aquí puedes insertar un iframe de Google Maps -->
       </div>
@@ -134,19 +156,19 @@
     <!-- Horarios -->
     <section id="horarios">
       <h2>Horarios de Atención</h2>
-      <p>Lunes a Viernes: 9:00 AM – 7:00 PM</p>
-      <p>Domingo: 9:00 AM – 3:00 PM</p>
+      <p>Lunes a Sábado: 9:00 AM – 6:00 PM</p>
+      <p>Domingo: 2:00 PM – 6:00 PM</p>
     </section>
 
     <!-- Promociones -->
     <section id="promociones">
       <h2>Promociones</h2>
-      <p>¡Corte + Tinte con 20% de descuento este mes!</p>
+      <p>¡Promoción pendiente!</p>
     </section>
 
     <!-- Footer -->
     <footer>
-      <p>&copy; 2026 Lili Studio</p>
+      <p>&copy; 2026 Pao Lashes</p>
       <p>
         Síguenos en: <a href="#">Facebook</a> |
         <a href="#">Instagram</a>
@@ -184,7 +206,7 @@
           const hora = document.getElementById("hora").value;
 
           const mensaje = `Hola, soy ${nombre}. Quiero reservar un turno para ${servicio} el ${fecha} a las ${hora}. Mi teléfono es ${telefono}.`;
-          const url = `https://wa.me/5355555555?text=${encodeURIComponent(mensaje)}`;
+          const url = `https://wa.me/5358251594?text=${encodeURIComponent(mensaje)}`;
 
           window.open(url, "_blank");
         });

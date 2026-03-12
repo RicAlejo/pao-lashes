@@ -1,10 +1,25 @@
 :root {
   --color-bg-dark: #111111; /* negro profundo */
   --color-bg-light: #ffffff; /* blanco puro */
-  --color-accent: #c9a227; /* dorado suave */
-  --color-secondary: #eaeaea; /* gris perla */
+  --color-accent: #bc51f1; /* dorado suave */
+  --color-secondary: #eedbf7; /* gris perla */
   --color-highlight: #4a1c1c; /* burdeos oscuro opcional */
+  --color-portada: rgb(59, 48, 73) ;
+
+
+
+
+   /* --color-bg-dark: #4B0082;
+  --color-bg-light: #C3B1E1;
+  --color-accent: #6A0DAD;
+  --color-secondary:#F8F8FF;
+  --color-highlight:  #D291BC;
+  --color-portada: #2E2E2E ; */
 }
+
+
+
+
 
 * {
   margin: 0;
@@ -21,12 +36,20 @@ body {
 
 /* Header / Portada */
 header {
-  background: url("img/portada.png") center/cover no-repeat;
+  background: url("img/portada.jpg") center/cover no-repeat;
   color: var(--color-bg-light);
   text-align: center;
   padding: 80px 20px;
   /* background-color: var(--color-bg-dark); */
 }
+
+@media (min-width: 600px) {
+  header {
+  background: var(--color-portada);
+  color: var(--color-bg-light);
+}
+}
+
 header h1 {
   font-size: 3rem;
   margin-bottom: 10px;
@@ -81,7 +104,31 @@ section h2 {
 }
 .service-card p {
   color: #555;
+  margin-bottom: 20px;
 }
+
+.contenedor-imagen-servicio{
+  max-width: 100px;
+  height: 100px;
+  margin:auto;
+}
+
+.imagen-servicio{
+  width: 100%;
+  height: 100%;
+}
+
+/* #servicio-lifting{
+background: url("img/lifting.jpg") center/cover no-repeat;
+}
+
+#servicio-pestañas{
+  background: url("img/pestanaPunto.jpg") center/cover no-repeat;
+}
+
+#servicio-laminado{
+  /* background: url("img/portada.jpg") center/cover no-repeat; */
+} */
 
 /* Botones */
 .btn,
